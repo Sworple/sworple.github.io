@@ -779,7 +779,7 @@ function load(saveString, autoLoad, fromPf) {
 	}
 	if (oldStringVersion == null){
 		//Last version was pre 4.10.0. Run compat code for 4.10.0
-		if (game.global.spiresCompleted >= 0){
+		if (game.global.spiresCompleted >= 1){
 			playerSpire.init();
 			playerSpire.spirestones = 20;
 			playerSpire.openPopup();
@@ -12429,7 +12429,7 @@ function nextWorld() {
 		else if (game.global.universe == 2){
 			if (game.global.world == 49) tooltip("UnlockedChallenge3", null, 'update');
 			countChallengeSquaredReward();
-			if (game.global.world == 6) autoBattle.firstUnlock();
+			if (game.global.world == 74) autoBattle.firstUnlock();
 			if (game.global.world == 201) {
 				game.global.tabForMastery = false;
 				document.getElementById('MasteryTabName').innerHTML = "Mutators";
