@@ -5567,7 +5567,7 @@ var toReturn = {
 				if (this.achieveDone) giveSingleAchieve("The Tortoise and the Bugs");
 				game.global.exterminateDone = true;
 				unlockBuilding("Hub");
-				message("You have completed the Exterminate Challenge! You have unlocked the Hub, a revolutionary new way to store your extra Trimps!", "Notices");
+				message("You have completed the Exterminate Challenge! You have already unlocked the Hub, but I can't code in a different challenge reward.", "Notices");
 				game.challenges.Exterminate.abandon();
 				game.global.challengeActive = "";
 			}
@@ -11561,7 +11561,7 @@ var toReturn = {
 			craftTime: 1,
 			AP: false,
 			blockU1: true,
-			tooltip: "<p>Cannot be purchased directly. Level is always equal to your total amount of Huts, Houses, Mansions, Hotels, Resorts, Gateways, and Collectors. Supports $incby$ Trimps.</p><p>Automatically unlocks on reaching Zone 60 in Universe 2</p>",
+			tooltip: "<p>Cannot be purchased directly. Level is always equal to your total amount of Huts, Houses, Mansions, Hotels, Resorts, Gateways, and Collectors. Supports $incby$ Trimps.</p><p>Automatically unlocks when you start.</p>",
 			increase: {
 				what: "trimps.max",
 				by: 25000
