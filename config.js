@@ -11555,9 +11555,9 @@ var toReturn = {
 			}
 		},
 		Hub: {
-			locked: 1,
-			owned: 0,
-			purchased: 0,
+			locked: 0,
+			owned: 1,
+			purchased: 1,
 			craftTime: 1,
 			AP: false,
 			blockU1: true,
@@ -11636,7 +11636,7 @@ var toReturn = {
 			AP: true,
 			tooltip: "Pay a tribute of food to your Dragimp, increasing his appetite and his speed. He will gather gems 5% faster (compounding).",
 			cost: {
-				food: [10000, 1.05]
+				food: [10000, 1.01]
 			},
 			increase: {
 				what: "Dragimp.modifier.mult",
