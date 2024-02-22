@@ -12633,7 +12633,7 @@ function nextWorld() {
 	}
 	game.global.zoneRes.unshift(0);
 	if (game.global.zoneRes.length > 5) game.global.zoneRes.pop();
-	if (game.global.world == 1 && game.global.universe == 1 && game.global.exterminateDone && game.buildings.Hub.locked){
+	if (game.global.world == 2 && game.global.universe == 1 && game.buildings.Hub.locked){
 		unlockBuilding("Hub");
 	}
 	if (game.global.world == 175 && game.global.universe == 2){

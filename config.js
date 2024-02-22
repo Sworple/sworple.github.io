@@ -11561,7 +11561,7 @@ var toReturn = {
 			craftTime: 1,
 			AP: false,
 			blockU1: true,
-			tooltip: "<p>Cannot be purchased directly. Level is always equal to your total amount of Huts, Houses, Mansions, Hotels, Resorts, Gateways, and Collectors. Supports $incby$ Trimps.</p><p>Automatically unlocks when you start.</p>",
+			tooltip: "<p>Cannot be purchased directly. Level is always equal to your total amount of Huts, Houses, Mansions, Hotels, Resorts, Gateways, and Collectors. Supports $incby$ Trimps.</p><p>Automatically unlocks when you reach Zone 2.</p>",
 			increase: {
 				what: "trimps.max",
 				by: 25000
