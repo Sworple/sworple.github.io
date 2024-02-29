@@ -9696,7 +9696,7 @@ var toReturn = {
 		difficultyBase: 1.2,
 		difficultyRange: 0.45,
 		lootBase: 1.3,
-		lootRange: 0.3
+		lootRange: 1
 	},
 
 	mapUnlocks: {
