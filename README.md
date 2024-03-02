@@ -1,2 +1,2 @@
 # Sworple.github.io
-This is a very bare-bones games site, as I'm not the best in terms of styling a webpage.
+This is a bare-bones site, will improve over time as I get better with CSS styling.
