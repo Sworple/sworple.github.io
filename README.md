@@ -1,2 +1,2 @@
-# Sworple.github.io
-This is a bare-bones site, will improve over time as I get better with CSS styling.
+# sworple.github.io
+it's my site! man is W3 School's CSS course really useful.
