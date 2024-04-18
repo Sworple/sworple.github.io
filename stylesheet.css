@@ -58,5 +58,6 @@ li a:hover {
     transition-duration: 0.2s;
 }
 .button:hover {
+    background-color:black;
     color:white;
 }
