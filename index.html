@@ -5,19 +5,36 @@
         <title>Sworple's Website</title>
         <meta name="description" content="a website I guess?">
         <meta name="author" content="Sworple">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        <ul>
-            <li class="title">Sworple's Website</li>
-            <li> <a href="index.html" class="active">Home</a></li>
-            <li> <a href="bing.html">Bing</a> </li>
-            <li style="float:right"> <a href="about.html">About</a> </li>
-        </ul>
-        <p> I made this for the ease of access of all my downloaded, and modified HTML stuff, for now.</p>
-        <p> The current list is below. </p>
-        <p> <a href="trimps/index.html" class="button trimps">Trimps</a> <a href="progress-knight/index.html" class="button">Progress Knight</a></p>
+        <script href="script.js"></script>
+        <div class="tab">
+            <button class="navbar" onclick="openTab(event,'Home')">Home</button>
+            <button class="navbar" onclick="openTab(event,'Games')">Games</button>
+            <button class="navbar" onclick="openTab(event,'Bing')">Bing</button>
+            <button class="navbar" onclick="openTab(event,'About')" style="float:right" >About</button>
+        </div>
+        
+        <div id="Home" class="tabcontent">
+        <p>Hey, welcome to my half-assed website!</p>
+        <p>Start by pressin one of those tabs up there</p>
+        
+        </div>
+        <div id="Games" class="tabcontent">
+            <p> The current games list is below.<br> </p>
+            <p> <a href="trimps/index.html" class="button trimps">Trimps</a> <a href="progress-knight/index.html" class="button">Progress Knight</a></p>
+        </div>
+
+        <div id="Bing" class="tabcontent">
+            <iframe src="bing.com" width="99%" height="99%"></iframe>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h1>About</h1>
+            <p> I'm Sworple, a, currently self-learned, programmer.</p>
+            <p> <a href="https://github.com/sworple/sworple.github.io">github.com/sworple/sworple.github.io</a> </p>
+        </div>
     </body>
 </html>
