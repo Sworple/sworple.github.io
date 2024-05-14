@@ -11,10 +11,10 @@
     <body>
         <script href="script.js"></script>
         <div class="tab">
-            <button class="navbar" onclick="openTab(event,'Home')">Home</button>
-            <button class="navbar" onclick="openTab(event,'Games')">Games</button>
-            <button class="navbar" onclick="openTab(event,'Bing')">Bing</button>
-            <button class="navbar" onclick="openTab(event,'About')" style="float:right" >About</button>
+            <button id="defaultTab" class="navbar tabButton" onclick="openTab(event,'Home')">Home</button>
+            <button class="navbar tabButton" onclick="openTab(event,'Games')">Games</button>
+            <button id="bing" class="navbar tabButton" > <a href="bing.html">Bing</a> </button>
+            <button class="navbar tabButton" onclick="openTab(event,'About')" style="float:right" >About</button>
         </div>
         
         <div id="Home" class="tabcontent">
@@ -25,10 +25,6 @@
         <div id="Games" class="tabcontent">
             <p> The current games list is below.<br> </p>
             <p> <a href="trimps/index.html" class="button trimps">Trimps</a> <a href="progress-knight/index.html" class="button">Progress Knight</a></p>
-        </div>
-
-        <div id="Bing" class="tabcontent">
-            <iframe src="bing.com" width="99%" height="99%"></iframe>
         </div>
 
         <div id="About" class="tabcontent">

@@ -14,6 +14,10 @@ p {
     margin: 10px 8px;
     font-size: 20px;
 }
+#bing {
+    text-decoration: none;
+    color:white;
+}
 .tab {
     list-style-type: none;
     margin: 0;
@@ -23,7 +27,11 @@ p {
     border-style: solid;
     border-color: black;
 }
-.navbar div p {
+.navbar {
+    background-color:#666666;
+    color:white;
+}
+.navbar div {
     float:left;
     display: block;
     text-align: center;
@@ -39,6 +47,9 @@ p {
     padding: 6px 12px;
     border: 1px solid #999999;
     border-top: none;
+}
+.active {
+    background-color:orange;
 }
 .button {
     margin: 10px;
