@@ -1,0 +1,64 @@
+body {
+    font-family: "Comic Sans MS", serif;
+    margin: 0px;
+    height:100%;
+    background-color:#c6c6c6
+}
+h2 {
+    margin: 10px 8px;
+    font-size: 30px;
+}
+p {
+    margin: 10px 8px;
+    font-size: 20px;
+}
+#bing {
+    text-decoration: none;
+    color:white;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666666;
+    color:rgb(255, 255, 255);
+    border-style: solid;
+    border-color: black;
+    text-align:center;
+}
+.navbar div {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color:#999999;
+    border-style: none solid none solid;
+    border-color: black;
+    border-radius: 3px;
+    color: black;
+}
+
+.active {
+    background-color:orange;
+}
+.button {
+    text-decoration:none;
+    margin:5px;
+    border: 3px solid;
+    border-radius: 8px;
+    background-color:#c6c6c6;
+    color:black;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition-duration: 0.2s;
+}
+.button:hover {
+    background-color:black;
+    color:white;
+}
+.trimps {
+    border-color:navy;
+}
+.trimps:hover {
+    background-color:navy;
+}
