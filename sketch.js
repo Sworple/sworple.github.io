@@ -5,6 +5,6 @@ function setup() {
 }
 
 function draw() {
-  rectangle(550, 50, 100)
+  rectangle(0, 0, 100)
 
 }
