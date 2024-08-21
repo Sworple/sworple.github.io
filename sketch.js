@@ -1,7 +1,10 @@
 function setup() {
-  createCanvas(400, 400);
+  //Creates a square by using windowHeight for both sides
+  createCanvas(windowHeight, windowHeight);
+  background(0,0,75);
 }
 
 function draw() {
-  background(220);
+  rectangle(550, 50, 100)
+
 }
