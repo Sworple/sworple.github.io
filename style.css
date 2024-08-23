@@ -2,13 +2,21 @@ body{
     font-family:'Comic Sans MS';
 
 }
-div h1 {
+h1 {
     color:#333333;
-    padding:0;
+    padding:0px;
+    margin:0px;
     text-align:center;
-    border:black solid 5px;
+}
+.header{
+    margin:0px;
+    padding:0px;
+    width:100%;
     background-color:orange;
-    margin:0;
+    outline-color:black;
+    outline-style:solid;
+    outline:5px;
+    overflow:hidden;
 }
 p{
     margin:5px;
@@ -27,4 +35,6 @@ button{
     border-radius:7.5px;
     padding:6px 10px;
     margin-left:5px;
+    color:black;
+    background-color:darkorange;
 }
