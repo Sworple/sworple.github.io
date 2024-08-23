@@ -1,4 +1,6 @@
 let cannonballX = 0;
+let cannonballSpeed = 5;
+let cannonballVelocity = 0;
 
 function  preload(){
 
@@ -25,8 +27,13 @@ function draw() {
   fill('black');
   circle(75, mouseY, 20)
 
-  //projectile
-  stroke('grey');
-  fill('grey');
-  circle(90, cannonballX, 17)
+
+  if(mouseIsPressed === true){
+    cannonballVelocity = mouseY;
+    
+    //projectile
+    stroke('grey');
+    fill('grey');
+    circle(90, cannonballX, 17)
+  }
 }
