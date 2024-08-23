@@ -1,12 +1,14 @@
 body{
     font-family:'Comic Sans MS';
+
 }
-h1 {
+div h1 {
     color:#333333;
-    padding-top:5px;
+    padding:0;
     text-align:center;
-    outline:black solid 5px;
+    border:black solid 5px;
     background-color:orange;
+    margin:0;
 }
 p{
     margin:5px;
