@@ -1,20 +1,18 @@
-let cannonballX = 0;
-let cannonballSpeed = 5;
-let cannonballVelocity = 0;
+let projectileX = 0;
+let projectileSpeed = 5;
+let projectileVelocity = 0;
 let cooldown = 5;
 let projectileActive = false;
 
 function  preload(){
 
 }
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noCursor();
   frameRate(60);
 
 }
-
 function draw() {
   clear();
 
@@ -31,23 +29,26 @@ function draw() {
 
   if(frameCount === 60){
     frameCount = 0;
-    if (cooldown > 0){
+    if(cooldown > 0){
       cooldown -= 1;
     }
   }
-
-  if(cooldown < 0 || projectileActive === true){
-    cannonballVelocity = mouseY;
-    
-    //projectile
-    stroke('grey');
-    fill('grey');
-    circle(90, cannonballX, 17)
-    
+  
+  if(cooldown === 0 & mouseIsPressed === true){
+    projectileVelocity = mouseY;
+    projectileX = 0;
     projectileActive = true;
-    cooldown = 5;
-    if(cannonballX >= windowWidth){
-      projectileActive = false;
+    while(projectileActive === true){
+      //projectile
+      stroke('grey');
+      fill('grey');
+      circle(90, projectileX, projectileVelocity)
+      projectileX += projectileSpeed;
+      if(projectileX >= windowWidth){
+        projectileActive = false;
+        projectileX = 0;
+        cooldown = 5;
+      }
     }
   }
 }
