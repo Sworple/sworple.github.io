@@ -1,6 +1,8 @@
 let cannonballX = 0;
 let cannonballSpeed = 5;
 let cannonballVelocity = 0;
+let cooldown = 5;
+let projectileActive = false;
 
 function  preload(){
 
@@ -27,13 +29,25 @@ function draw() {
   fill('black');
   circle(75, mouseY, 20)
 
+  if(frameCount === 60){
+    frameCount = 0;
+    if (cooldown > 0){
+      cooldown -= 1;
+    }
+  }
 
-  if(mouseIsPressed === true){
+  if(cooldown < 0 || projectileActive === true){
     cannonballVelocity = mouseY;
     
     //projectile
     stroke('grey');
     fill('grey');
     circle(90, cannonballX, 17)
+    
+    projectileActive = true;
+    cooldown = 5;
+    if(cannonballX >= windowWidth){
+      projectileActive = false;
+    }
   }
 }
