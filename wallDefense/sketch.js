@@ -2,9 +2,10 @@ let projectileX = 0;
 let projectileSpeed = 7;
 let projectileVelocity = 0;
 let projectileActive = false;
-let cooldown = 3;
+let cooldown = 0;
 let time = 0;
 let enemy = [];
+let enemySpeed = 2;
 
 function  preload(){
 
@@ -37,13 +38,14 @@ function draw() {
       cooldown -= 1;
     }
   }
-  
+
   if(cooldown === 0 & mouseIsPressed === true & projectileActive === false){
       projectileVelocity = mouseY;
       projectileX = 85;
       projectileActive = true;
-          cooldown = 3;
+      cooldown = 3;
   }
+  
   if(projectileActive === true){
     //projectile
     stroke('black');
