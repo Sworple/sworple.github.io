@@ -1,8 +1,10 @@
 let projectileX = 0;
 let projectileSpeed = 7;
 let projectileVelocity = 0;
-let cooldown = 3;
 let projectileActive = false;
+let cooldown = 3;
+let time = 0;
+let enemy = [];
 
 function  preload(){
 
@@ -24,10 +26,13 @@ function draw() {
   stroke('black');
   fill('black');
   circle(90, mouseY, 30)
-  text(cooldown, 15, mouseY+4)
+  textFont('Comic Sans MS')
+  textSize(15)
+  text(cooldown, 15, mouseY+5)
 
   if(frameCount === 60){
     frameCount = 0;
+    time++
     if(cooldown > 0){
       cooldown -= 1;
     }
@@ -35,7 +40,7 @@ function draw() {
   
   if(cooldown === 0 & mouseIsPressed === true & projectileActive === false){
       projectileVelocity = mouseY;
-      projectileX = 75;
+      projectileX = 85;
       projectileActive = true;
           cooldown = 3;
   }
