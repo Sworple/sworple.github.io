@@ -38,7 +38,10 @@ function draw() {
       cooldown -= 1;
     }
   }
-
+  if(time === 4){
+    time = 0;
+    enemySpawn();
+  }
   if(cooldown === 0 & mouseIsPressed === true & projectileActive === false){
       projectileVelocity = mouseY;
       projectileX = 85;
@@ -56,5 +59,11 @@ function draw() {
       projectileActive = false;
       projectileX = 0;
     }
+  }
+}
+
+function enemySpawn(){
+  for(let i = 1; i < random(4,6); i++){
+    
   }
 }
