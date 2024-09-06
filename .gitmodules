@@ -1,4 +1,4 @@
 [submodule "wallDefense"]
 	path = wallDefense
-	url = https://github.com/Sworple/wallDefense
+	url = https://github.com/Sworple/wallDefense/
 	branch = main
