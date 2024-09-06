@@ -2,6 +2,6 @@
 very basic website
 
 ## three things linked on it;
-altered fork of Trimps
-altered version of Progress Knight
-personal side-project of wallDefense
+altered fork of Trimps <br>
+altered version of Progress Knight <br>
+personal side-project of wallDefense <br>
