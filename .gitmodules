@@ -2,3 +2,7 @@
 	path = wallDefense
 	url = https://github.com/Sworple/wallDefense/
 	branch = main
+[submodule "hillCar"]
+	path = hillCar
+	url = https://github.com/Sworple/hillCar
+	branch = main
